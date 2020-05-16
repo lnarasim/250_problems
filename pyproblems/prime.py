@@ -2,7 +2,7 @@
 from pyproblems.utility import is_int
 
 def is_prime(number):
-    '''This fucntion returns True if the number is prime, 
+    '''This fucntion returns True if the number is prime,
     False otherwise'''
     if not is_int(number):
         raise TypeError(f"Unsupported Type {type(number)}")
