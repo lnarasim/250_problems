@@ -1,2 +1,1 @@
-__pycache__/utility.cpython-38.pyc
-tests/__pycache__/test_utility.cpython-38-pytest-5.4.2.pyc
+*.pyc
