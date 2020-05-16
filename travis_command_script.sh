@@ -7,3 +7,5 @@ echo 'Running pytest on the entire project'
 python -m pytest -v tests/
 pytest_status = $?
 echo 'pytest status', $?
+
+exit $pylint_status | $pytest_status
