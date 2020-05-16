@@ -1,4 +1,4 @@
-from prime import is_prime
+from pyproblems.prime import is_prime
 import pytest
 
 def test_prime_valid_values():

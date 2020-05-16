@@ -1,4 +1,4 @@
-from utility import is_int
+from pyproblems.utility import is_int
 
 def test_is_int():
     assert is_int(10) == True

@@ -1,5 +1,5 @@
 echo 'Running pylint and finding potential bad practices/bugs'
-python -m pylint
+python -m pylint pyproblems
 pylint_status = $?
 echo 'pylint status', $pylint_status
 
