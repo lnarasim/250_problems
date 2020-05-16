@@ -1,3 +1,4 @@
+PYTHONPATH=$PYTHONPATH:./source
 echo 'Running pylint and finding potential bad practices/bugs'
 python -m pylint source
 status = $?
