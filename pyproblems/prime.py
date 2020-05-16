@@ -1,4 +1,4 @@
-from utility import is_int
+from pyproblems.utility import is_int
 
 def is_prime(number):
     if not is_int(number):
