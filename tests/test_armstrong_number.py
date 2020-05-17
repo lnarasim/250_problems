@@ -5,7 +5,7 @@ def test_armstrong_number_valid():
     numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 153, 370, 371, 407, 1634, 8208, 9474]
 
     for number in numbers:
-        assert is_amstrong_number(number)
+        assert is_armstrong_number(number)
         
 def test_amstrong_number_invalid():
     numbers = [100, 200, 300, 10000, 10001, 2999]
