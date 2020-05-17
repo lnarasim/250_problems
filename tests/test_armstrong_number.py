@@ -1,18 +1,18 @@
-from pyproblems.amstrong_number import is_amstrong_number
+from pyproblems.armstrong_number import is_armstrong_number
 import pytest
 
-def test_amstrong_number_valid():
+def test_armstrong_number_valid():
     numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 153, 370, 371, 407, 1634, 8208, 9474]
 
     for number in numbers:
-        assert is_amstrong_number(number)
+        assert is_armstrong_number(number)
         
 def test_amstrong_number_invalid():
     numbers = [100, 200, 300, 10000, 10001, 2999]
     for number in numbers:
-        assert is_amstrong_number(number) == False
+        assert is_armstrong_number(number) == False
 
-def test_amstrong_number_different_types():
+def test_armstrong_number_different_types():
     inputs = {
         'list': [1, 2, 3, 4,],
         'dict': {1: 1, 2: 2},
@@ -25,4 +25,4 @@ def test_amstrong_number_different_types():
 
     for _, value in inputs.items():
         with pytest.raises(TypeError):
-            is_amstrong_number(value)
+            is_armstrong_number(value)

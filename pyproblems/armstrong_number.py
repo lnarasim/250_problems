@@ -1,7 +1,7 @@
 '''This module has a function for amstrong number'''
 from pyproblems.utility import is_int
 
-def is_amstrong_number(number):
+def is_armstrong_number(number):
     '''This function returns True if the number is amstrong number,
     returns False otherwise'''
     if not is_int(number):
@@ -15,3 +15,4 @@ def is_amstrong_number(number):
         sum_of_digits += (int(digit) ** num_digits)
 
     return number == sum_of_digits
+    
