@@ -5,3 +5,7 @@ def is_int(number):
     if isinstance(number, int) and (not isinstance(number, bool)):
         return True
     return False
+
+def is_str(s_param):
+    '''This function checks whether the passed parameter is a string'''
+    return isinstance(s_param, str)
