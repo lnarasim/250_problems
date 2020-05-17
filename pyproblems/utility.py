@@ -8,4 +8,4 @@ def is_int(number):
 
 def is_str(s_param):
     '''This function checks whether the passed parameter is a string'''
-    return isinstance(s_param, str) and type(s_param) == str
+    return isinstance(s_param, str)
