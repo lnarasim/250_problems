@@ -6,3 +6,4 @@ Group of people trying to solve 250 problems along with pylint, pytest and travi
 1. Prime Number (prime.py)
 2. Armstrong Number (armstrong.py)
 3. Pythagorean Triples (pythagorean_triple.py)
+4. Given a number, return a list containing individual digits. Ex: 1234 should be transformed as [1, 2, 3, 4]
