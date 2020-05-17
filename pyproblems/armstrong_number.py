@@ -15,3 +15,4 @@ def is_armstrong_number(number):
         sum_of_digits += (int(digit) ** num_digits)
 
     return number == sum_of_digits
+    
