@@ -10,7 +10,7 @@ def test_armstrong_number_valid():
 def test_amstrong_number_invalid():
     numbers = [100, 200, 300, 10000, 10001, 2999]
     for number in numbers:
-        assert is_armstrong_number(number) == False
+        assert not is_armstrong_number(number)
 
 def test_armstrong_number_different_types():
     inputs = {
