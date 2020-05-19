@@ -6,6 +6,7 @@ def test_prime_valid_values():
     assert is_prime(100) == False
     assert is_prime(11) == True
     assert is_prime(101) == True
+    assert is_prime(140) == False
 
 def test_prime_invalid_values():
     with pytest.raises(TypeError) as err:
