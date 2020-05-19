@@ -13,6 +13,7 @@ def test_is_int():
     assert is_int(set()) == False
     assert is_int(1000) == True
     assert is_int(10000000) == True
+    assert is_int(1)
     
 def test_is_str():
     assert is_str("123")
