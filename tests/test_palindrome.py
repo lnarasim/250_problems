@@ -10,6 +10,7 @@ def test_palindrome_invalid():
     assert not is_palindrome("something")
     assert not is_palindrome("everything")
     assert not is_palindrome("nothing")
+    assert not is_palindrome("nowhere")
 
 def test_palindrome_invalid_types():
     invalid = [("123", "456", "789"), (6, "1", "3"), {1: "123"}, None, {123, 123, 123}, True, False]
