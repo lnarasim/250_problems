@@ -17,8 +17,5 @@ def diagonal_sum(matrix_list):
     for i in range(length+1):
         leading_diag += matrix_list[i][i]
         secondary_diag += matrix_list[i][length -(i+1)]
-    print('Sum of the diagonals are:')
-    print(f'Principal diagonal = {leading_diag}')
-    print(f'Secondary duagonal = {secondary_diag}')
-    print(f'sum of both the diagonal elements are = {leading_diag+secondary_diag}')
+
     return leading_diag+secondary_diag
