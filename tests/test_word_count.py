@@ -8,6 +8,7 @@ def test_word_count_valid():
                                                     "python": 2, "land": 2}
     assert word_count("tik tik tik") == {"tik": 3}
     assert word_count("") == {}
+    assert word_count("123") == {"123": 1}
 
 def test_word_count_invalid():
     invalid_inputs = [123, 10.1, [1, 2, 3, 4], {1: 1, 2: 2}, None, True]
