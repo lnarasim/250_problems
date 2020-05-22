@@ -1,15 +1,14 @@
-'''This program gives the derivative of "x" raised to the nth power,
+'''This program returns the derivative of "x" raised to the nth power,
 where n ranges from "-infinity to +infinity"'''
+from pyproblems.utility import is_int
 def derivative_x_pow(dif, num):
-    '''The input should be integers, the function will give return the
-    nth derivative of "x" raised to the power of the given number'''
-    if not isinstance(num, int) or isinstance(num, bool):
-        raise TypeError("unsupported format")
-    if not isinstance(dif, int) or isinstance(dif, bool):
-        raise TypeError("unsupported format")
+    '''The function will return the nth derivative of "x" raised to the power of the given number'''
+    for i in (dif, num):
+        if not is_int(i):
+            raise TypeError("unsupported format")
     if dif <= 0:
         raise ValueError("invalid entry, enter a valid number to differentiate")
-    if ((dif > num) and (num == 0)) or ((dif > num) and (num == 1)):
+    if (dif > num) and num in (0, 1):
         return 0
     if dif >= num > 0:
         return 1
