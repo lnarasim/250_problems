@@ -1,33 +1,33 @@
 import pytest
-from pyproblems.abundant_number import is_abundant
+from pyproblems.abundant_number import is_abundant_number
 
-def test_true():
-    assert is_abundant(12)==True
-    assert is_abundant(18)==True
-    assert is_abundant(20)==True
-    assert is_abundant(30)==True
-    assert is_abundant(945)==True
-    assert is_abundant(1158)==True
+def test_abundant_number_true():
+    assert is_abundant_number(12)
+    assert is_abundant_number(18)
+    assert is_abundant_number(20)
+    assert is_abundant_number(30)
+    assert is_abundant_number(945)
+    assert is_abundant_number(1158)
 
-def test_false():
-    assert is_abundant(13)==False
-    assert is_abundant(45)==False
-    assert is_abundant(28)==False#this is perfect number
-    assert is_abundant(941)==False
+def test_abundant_number_false():
+    assert not is_abundant_number(13)
+    assert not is_abundant_number(45)
+    assert not is_abundant_number(28)#this is perfect number
+    assert not is_abundant_number(941)
 
-def test_unsupported():
+def test_abundant_number_unsupported():
     with pytest.raises(TypeError) as err:
-        is_abundant([12])#True value but in a list
+        is_abundant_number([12])#True value but in a list
         assert err.value.args[0] == "unsupported format, Enter an Integer"
     with pytest.raises(TypeError) as err:
-        is_abundant((12,20,30))#true values in a tuple
+        is_abundant_number((12,20,30))#true values in a tuple
         assert err.value.args[0] == "unsupported format, Enter an Integer"
     with pytest.raises(TypeError) as err:
-        is_abundant('Jothi')#String
+        is_abundant_number('Jothi')#String
         assert err.value.args[0] == "unsupported format, Enter an Integer"
     with pytest.raises(TypeError) as err:
-        is_abundant({'first':2,'second':12})#Random valuse inside a dict
+        is_abundant_number({'first':2,'second':12})#Random valuse inside a dict
         assert err.value.args[0] == "unsupported format, Enter an Integer"
     with pytest.raises(TypeError) as err:
-        is_abundant([12,30,945])#True values inside a list
+        is_abundant_number([12,30,945])#True values inside a list
         assert err.value.args[0] == "unsupported format, Enter an Integer"
