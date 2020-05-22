@@ -1,0 +1,26 @@
+Guideline for submitting your code to lnarasim/250_problems
+
+Prerequisites :
+• Install Git in you machine(windows or Linux)
+• Install Visual Studio Code for python
+• A Git Hub account.
+
+Method:
+Step 1: Once you accept your invitation to contribute to the 250_problems repository, create a branch from the master.
+Step 2: Create a directory in your machine and open “GIT bash” at that directory.
+Step 3: Now to clone the master repository into your directory, you can download and paste it there or go to your you GIT bash and type “git clone {master repository download link}” press enter.
+It’ll download the contents of the 250_problems along with the branches.
+Step 4: Now open you VS Code and create a new workspace. That workspace should be the directory that you created in Step 2.
+Now that workspace will have “pyproblems” folder, “tests” folder and other files.
+Step 5: Now in your VS Code window, at the bottom left corner the branch will be “master”, change that to the branch that you created in Step 1.
+Step 6: You can create your own program or modify a program that is already present in the repository.
+Note: The program for a problem should be placed under the folder “pyproblems” and it corresponding test case should be in “tests”.
+Step 7: If you are done with your program and test case, stage the changes made and commit those staged changes.
+Step 8: Synchronize the changes to the Git Hub, by clicking on the Synchronize button on the bottom left near the branch name.
+Step 9: After successful commit to the Git hub, create a pull request for committing those changes from your branch to the master.
+Step 10: Update “readme.md” for the program that you have created from your branch and follow the steps 7 to 9.
+
+Things to follow while creating your program.
+• Use pylint for scoring your program
+• Use pytest for testing your test cases.
+• Do not commit without satisfying the above 2 tests.
