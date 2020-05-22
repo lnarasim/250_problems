@@ -5,6 +5,7 @@ def test_palindrome_valid():
     assert is_palindrome('111')
     assert is_palindrome('malayalam')
     assert is_palindrome('liril')
+    assert is_palindrome('wow')
 
 def test_palindrome_invalid():
     assert not is_palindrome("something")
