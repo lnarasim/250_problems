@@ -2,7 +2,7 @@
 from pyproblems.utility import is_int
 def sep_odd_eve(list_int):
     '''when a list containing set of integers is passed, this function returns
-    two lists within a list one containing odd integers and the other containing even integers'''
+    two tuple within a tuple one containing odd integers and the other containing even integers'''
     if not isinstance(list_int, list):
         raise TypeError("unsupported format, pass a list")
     for i in list_int:
@@ -15,4 +15,4 @@ def sep_odd_eve(list_int):
             odd_list.append(i)
         else:
             even_list.append(i)
-    return [odd_list, even_list]
+    return tuple(odd_list), tuple(even_list)
