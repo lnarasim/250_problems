@@ -1,4 +1,4 @@
-''' This program returns the factorial of the number passes'''
+''' This program returns the factorial of the passed arguement'''
 from pyproblems.utility import is_int
 def factorial_num(number):
     '''The function will return the factorial of the given number'''
