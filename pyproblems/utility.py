@@ -9,3 +9,10 @@ def is_int(number):
 def is_str(s_param):
     '''This function checks whether the passed parameter is a string'''
     return isinstance(s_param, str)
+
+def is_float(f_number):
+    '''This function returns True is the number is a float,
+    otherwise false'''
+    if isinstance(f_number, float):
+        return True
+    return False
