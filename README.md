@@ -16,3 +16,4 @@ Group of people trying to solve 250 problems along with pylint, pytest and travi
 11. factorial of given number(factorial_number.py)
 12. Seperating the given list of integers to tuples of odd and even tuples.(sep_odd_eve.py)
 13. Finding the prime number that exists before the given number(prime_befor.py)
+12. Evaluating the interest part of the principle compunded annualy(compund_int.py)
