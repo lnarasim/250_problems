@@ -5,7 +5,7 @@ from pyproblems.utility import is_float
 
 def compound_interest(principle=1000, years=2, rate=7):
     '''This function will return the interest part of the principle
-    compmpuonded throughout the term.
+    compounded throughout the term.
     Note: The interest is compounded annunaly, so the year must not be a float'''
     if not is_int(years):
         raise TypeError(f'Unsupported Format,{type(years)} passed in the placce of integer')
