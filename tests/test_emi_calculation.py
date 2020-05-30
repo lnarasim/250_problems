@@ -9,6 +9,7 @@ def test_emi_value():
     assert emi_calc(10000,12.05,1) == 889
     assert emi_calc(350000,13.99,3) == 11960
     assert emi_calc() == 3227
+    assert emi_calc(1000000,10,12) == 11951
 
 def test_emi_calc_invalid():
     with pytest.raises(ValueError):
