@@ -18,3 +18,4 @@ Group of people trying to solve 250 problems along with pylint, pytest and travi
 13. Finding the prime number that exists before the given number(prime_befor.py)
 14. Evaluating the interest part of the principle, compounded annualy(compound_int.py)
 15. EMI(Equated Monthly Installment) calculator. (emi_calculation.py)
+16. Find area of square or rectangle(area.py)
