@@ -1,8 +1,9 @@
 '''This program is to find out the given two numbers are amicable number or not'''
 from pyproblems.utility import is_int
+
 def amicable_numbers(num1, num2):
-    '''This function returns (Amicable number) if the numbers are amicable number,
-    returns (Not Amicable) otherwise'''
+    '''This function returns True if the numbers are amicable number,
+    returns False otherwise'''
     for i in (num1, num2):
         if not is_int(i):
             raise TypeError("unsupported format")
