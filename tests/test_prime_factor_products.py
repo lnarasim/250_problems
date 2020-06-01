@@ -1,7 +1,9 @@
 from pyproblems.prime_factor_products import product_prime
 import pytest
 def test_product_prime_int():
-    assert product_prime(220)
+    assert product_prime(220) == 110
+    assert product_prime(144) == 6
+    assert product_prime(146) == 146
   
 def test_product_prime_float():
     with pytest.raises(TypeError):

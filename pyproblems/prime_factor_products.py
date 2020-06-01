@@ -1,5 +1,7 @@
 '''This program is to find out the product of the prime factors of a given number'''
 from pyproblems.utility import is_int
+from pyproblems.prime import is_prime
+
 def product_prime(num1):
     '''This function returns the product of the numbers which are prime factors
     of a given number'''
@@ -10,12 +12,7 @@ def product_prime(num1):
     product = 1
     for i in range(2, num1+1):
         if num1 % i == 0:
-            is_prime = 1
-            for j in range(2, int(i/2 + 1)):
-                if i % j == 0:
-                    is_prime = 0
-                    break
-            if is_prime:
+            if is_prime(i):
                 product = product * i
     return product
     
