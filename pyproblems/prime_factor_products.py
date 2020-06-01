@@ -11,8 +11,7 @@ def product_prime(number):
         raise ValueError("pass an integer greater than 0")
     product = 1
     for i in range(2, number+1):
-        if number % i == 0:
-            if is_prime(i):
-                product = product * i
+        if number % i == 0 and is_prime(i):
+            product = product * i
     return product
     
