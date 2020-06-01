@@ -23,7 +23,7 @@ def calc_int_paid(principle: "Money borrowed" = 100000, interest: "interest rate
     emi = principle/annuity
 
     #The below method is to calculate the total interest from the loan schedule
-    interest_amt = principle*(interest/(12*100))
+    interest_amt = principle*monthly_int
     total_interest = interest_amt
     principle_amt = emi - interest_amt
     loan_outstanding = principle-principle_amt
