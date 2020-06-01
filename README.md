@@ -19,3 +19,4 @@ Group of people trying to solve 250 problems along with pylint, pytest and travi
 14. Evaluating the interest part of the principle, compounded annualy(compound_int.py)
 15. EMI(Equated Monthly Installment) calculator. (emi_calculation.py)
 16. Find area of square or rectangle(area.py)
+17. Total interest ammount paid in a loan(interest_paid.py)
