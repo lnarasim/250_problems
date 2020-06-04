@@ -8,5 +8,5 @@ def sort_complex_numbers(*complex_numbers):
         if not is_int(i) and not is_float(i) and not isinstance(i, complex):
             raise TypeError("Unsupported format")
     list_complex = list(complex_numbers)
-    list_complex.sort(key=lambda real_part: real_part.real)
+    list_complex.sort(key=lambda complex_num: complex_num.real)
     return tuple(list_complex)
