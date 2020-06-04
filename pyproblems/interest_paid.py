@@ -15,21 +15,25 @@ def calc_int_paid(amt_borrowed: "Money borrowed" = 100000, int_rate: "interest r
         if i < 1:
             raise ValueError("Invalid Entry")
 
-    monthly_int = int_rate/(12 * 100) #converting the yearly interest to monthly
-    months = term*12
-    present_value = 1/(1+monthly_int) #Finding out present value for Re.1
-    v_n = present_value**months
-    annuity = (1-v_n)/monthly_int #annuity for the term
-    emi = amt_borrowed / annuity
+    #Encapsulating of the function to calculate emi
+    def calc_emi(amt_borrowed, int_rate, term):
+        monthly_int = int_rate/(12 * 100) #converting the yearly interest to monthly
+        months = term*12
+        present_value = 1/(1+monthly_int) #Finding out present value for Re.1
+        v_n = present_value**months
+        annuity = (1-v_n)/monthly_int #annuity for the term
+        return amt_borrowed / annuity
 
     #The below method is to calculate the total interest from the loan schedule
-    interest_amt = amt_borrowed*monthly_int
+
+    emi = calc_emi(amt_borrowed, int_rate, term)
+    interest_amt = amt_borrowed*(int_rate/(12 * 100))
     total_interest = interest_amt
     principle_amt = emi - interest_amt
     loan_outstanding = amt_borrowed-principle_amt
 
     while loan_outstanding > 0:
-        interest_amt = loan_outstanding*monthly_int
+        interest_amt = loan_outstanding*(int_rate/(12 * 100))
         total_interest += interest_amt
         principle_amt = emi - interest_amt
         loan_outstanding = loan_outstanding - principle_amt
